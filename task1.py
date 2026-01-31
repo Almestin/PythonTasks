@@ -8,13 +8,11 @@ print(63 * "*")
 print("*", "*", sep = 110 * " ")
 print("*", "Игра: Угадай число!", "*", sep = 40 * " ")
 print("*", "*", sep = 110 * " ")
-print("*", "Суть игры - угадать число от 1 до 100 за наименьшее число попыток", "*", sep=4 * " ")
+print("*", "Суть игры - угадать число от 1 до 100 за наименьшее число попыток", "*", sep = 4 * " ")
 print("*", "*", sep = 110 * " ")
 print(63 * "*")
 
-
 def getting_an_answer():
-    global number_of_attempts
     global answer
     while True:
         try:
@@ -24,7 +22,6 @@ def getting_an_answer():
         if answer:
             return answer
             break
-
 
 while answer != number_to_guess:
     getting_an_answer()
