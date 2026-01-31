@@ -19,6 +19,11 @@ def getting_an_answer():
             answer = int(input("Введите число: "))
         except Exception:
             print("Введеные данные некорректны. Введите число от 1 до 100")
+            continue
+        if  answer < 1 or answer > 100:
+            print("Введеные данные некорректны. Введите число от 1 до 100")
+            answer = None
+            continue
         if answer:
             return answer
             break
